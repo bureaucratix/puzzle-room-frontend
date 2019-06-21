@@ -58,7 +58,7 @@ function createUser(name) {
         body: JSON.stringify(payload)
     }
     
-    fetch('http://localhost:3000/api/v1/users', config)
+    fetch('https://flatiron-puzzle-room.herokuapp.com/api/v1/users', config)
     .then(res => res.json())
     .then(json => {
         activeUser = json
@@ -69,7 +69,7 @@ function createUser(name) {
 
 function updateUser(user){
 
-    let URL = 'http://localhost:3000/api/v1/users'
+    let URL = 'https://flatiron-puzzle-room.herokuapp.com/api/v1/users'
     let user_url = URL + '/' + user.id
     console.log(user)
     fetch(user_url, {
