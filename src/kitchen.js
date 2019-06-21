@@ -2,7 +2,7 @@ function loadKitchen(){
     clearScene();
     console.log(activeUser)
     const container = document.getElementById("content");
-    document.body.style.backgroundImage ="url('../frontend/images/IMG-5707.JPG')"; 
+    document.body.style.backgroundImage ="url('images/IMG-5707.JPG')"; 
     
     let gridContainer = document.createElement('div')
     gridContainer.classList.add('grid-container');

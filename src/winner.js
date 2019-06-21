@@ -1,6 +1,6 @@
 function loadWinnerPage(){
    
-    document.body.style.backgroundImage = "url('../frontend/images/winner.jpg')";
+    document.body.style.backgroundImage = "url('images/winner.jpg')";
     let content = document.getElementById('content')
     content.remove() 
     let container = document.createElement('div')

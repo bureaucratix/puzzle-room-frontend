@@ -1,6 +1,6 @@
 function loadCoffeePage(){
     clearScene();
-    document.body.style.backgroundImage = "url('../frontend/images/coffee.jpg')";
+    document.body.style.backgroundImage = "url('images/coffee.jpg')";
     showLetter('E');
     activeUser.found_complete = true 
     updateUser(activeUser)
