@@ -58,7 +58,7 @@ function addRiddleForm(){
       });
 
    
-    let URL = 'http://localhost:3000//api/v1/riddles'
+    let URL = 'https://flatiron-puzzle-room.herokuapp.com/api/v1/riddles'
 
     fetch(URL, {mode: 'cors', headers: {
         'Content-Type': 'application/json',

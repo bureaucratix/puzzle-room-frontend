@@ -1,7 +1,7 @@
 function loadCommons(){
     clearScene();
     const container = document.getElementById("content");
-    document.body.style.backgroundImage ="url('../frontend/images/commons.png')"; 
+    document.body.style.backgroundImage ="url('images/commons.png')"; 
  
     let gridContainer = document.createElement('div')
     gridContainer.classList.add('grid-container');

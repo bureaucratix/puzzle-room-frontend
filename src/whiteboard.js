@@ -1,7 +1,7 @@
 function loadMessageBoard(){
     clearScene();
     document.body.style.backgroundImage ="url('images/whiteboard.png')";
-    let URL = 'http://localhost:3000//api/v1/messages'
+    let URL = 'https://flatiron-puzzle-room.herokuapp.com/api/v1/messages'
     fetch(URL).then(res=>res.json())
     .then(json=>{
         displayMessages(json, form)
@@ -78,7 +78,7 @@ function displayMessage(message){
 function addNote(answer){
     let author = activeUser.name
     let content = answer.target[0].value
-    let URL = 'http://localhost:3000/api/v1/messages'
+    let URL = 'https://flatiron-puzzle-room.herokuapp.com/api/v1/messages'
     let payload = {message: {author: activeUser.name, content: content, user_id: activeUser.id}}
     let config = {
         method: 'POST',
